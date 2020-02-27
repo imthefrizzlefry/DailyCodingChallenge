@@ -25,3 +25,10 @@ class findSumOfKTests(unittest.TestCase):
         k = 12
 
         self.assertTrue(findSumOfK(s, k))
+
+    def test_findSumOfTests_EmptySet(self):
+        s = []
+        k = 12
+
+        self.assertTrue(findSumOfK(s, k))
+    

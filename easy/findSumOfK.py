@@ -5,8 +5,7 @@ def findSumOfK(s, k):
     logging.debug(s)
     logging.debug(k)
     #create an empty set of compliments needed for reach K
-    compList = set([])
-    logging.debug(compList)
+    compList = set()
 
     #for each num a in s, see if k-a in in the compliment set
     for a in s:
