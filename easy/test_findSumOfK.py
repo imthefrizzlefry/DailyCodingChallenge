@@ -30,5 +30,5 @@ class findSumOfKTests(unittest.TestCase):
         s = []
         k = 12
 
-        self.assertTrue(findSumOfK(s, k))
+        self.assertFalse(findSumOfK(s, k))
     
