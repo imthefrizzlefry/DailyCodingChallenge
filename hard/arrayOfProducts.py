@@ -10,18 +10,17 @@ Follow-up: what if you can't use division?
 '''
 
 def arrayOfProducts(myArray):
-    newArray = []
-    prodBeforeI = 1
-    prodAfterI = 1
+    n = len(myArray)
+    newArray = [0]*n
+    prodBeforeI = [1]*n
+    prodAfterI = [1]*n
 
-    for num in myArray:
-        prodAfterI *= num
+    for i in range(1, n):
+        prodBeforeI[i] = myArray[i-1] * prodBeforeI[i-1]
+        prodAfterI[n-1-i] = myArray[n-i] * prodAfterI[n-i] 
 
     for i in range(0,len(myArray)):
-        if i > 0:
-            prodBeforeI *= myArray[i-1]
-        prodAfterI /= myArray[i]
-        newArray.append(int(prodBeforeI * prodAfterI))
+        newArray[i] = prodBeforeI[i] * prodAfterI[i]
 
     return newArray
     
