@@ -19,7 +19,7 @@ def arrayOfProducts(myArray):
         prodBeforeI[i] = myArray[i-1] * prodBeforeI[i-1]
         prodAfterI[n-1-i] = myArray[n-i] * prodAfterI[n-i] 
 
-    for i in range(0,len(myArray)):
+    for i in range(0, n):
         newArray[i] = prodBeforeI[i] * prodAfterI[i]
 
     return newArray
