@@ -10,7 +10,7 @@ Bonus: Can you do this in one pass?
 '''
 
 def findSumOfK(s, k):
-    ''' return whether any two numbers from the list s add up to k '''
+    ''' return boolean indicating whether any two numbers from the list s add up to k '''
     logging.debug(s)
     logging.debug(k)
     #create an empty set of compliments needed for reach K
