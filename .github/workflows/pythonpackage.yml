@@ -31,14 +31,10 @@ jobs:
       run: |
         pip install pytest
         pytest
-    - name: Coverage check
-      uses: devmasx/coverage-check-action@v1.1.0
+    - name: Python Django Coverage GitHub Action
+      uses: dc740/django-coveragepy-github-action@0.9
       with:
-        # lcov | simplecov
-        type: # default is lcov
-        # Github token for create checks
-        token: # default is World
-        # Minimum coverage
-        min_coverage: # optional, default is 80
-        # Json with coverage result
-        result_path: 
+        # Application
+        django-app: # optional, default is 
+        # Minimum allowed code coverage
+        minimum-coverage: # optional, default is 10
