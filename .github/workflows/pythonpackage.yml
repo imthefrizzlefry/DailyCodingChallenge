@@ -31,10 +31,3 @@ jobs:
       run: |
         pip install pytest
         pytest
-    - name: Python Django Coverage GitHub Action
-      uses: dc740/django-coveragepy-github-action@0.9
-      with:
-        # Application
-        django-app: # optional, default is 
-        # Minimum allowed code coverage
-        minimum-coverage: # optional, default is 10
