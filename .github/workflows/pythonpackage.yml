@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [2.7, 3.5, 3.6, 3.7, 3.8]
+        python-version: [3.5, 3.6, 3.7, 3.8]
 
     steps:
     - uses: actions/checkout@v2
@@ -31,3 +31,14 @@ jobs:
       run: |
         pip install pytest
         pytest
+    - name: Coverage check
+      uses: devmasx/coverage-check-action@v1.1.0
+      with:
+        # lcov | simplecov
+        type: # default is lcov
+        # Github token for create checks
+        token: # default is World
+        # Minimum coverage
+        min_coverage: # optional, default is 80
+        # Json with coverage result
+        result_path: 
