@@ -1,5 +1,6 @@
 import unittest
 from CountUnivalSubtree import count_unival_subtree
+from CountUnivalSubtree import Node
 
 class CountUniversalSubtreeTests(unittest.TestCase):
     def test_findSumOfTests_Example(self):
