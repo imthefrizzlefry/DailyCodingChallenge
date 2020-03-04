@@ -3,5 +3,5 @@
     "python.testing.unittestEnabled": false,
     "python.testing.nosetestsEnabled": false,
     "python.testing.pytestEnabled": true,
-    "python.pythonPath": "C:\\ProgramData\\Miniconda3\\python.exe"
+    "python.pythonPath": "C:\\Program Files\\Python36\\python.exe"
 }
